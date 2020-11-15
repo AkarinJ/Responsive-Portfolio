@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  display: inline-flex;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1%;
@@ -19,8 +19,8 @@ h1 {
 
 
 
-/*nav ul {
-  display: flex;
+header nav  {
+  display: inline-block;
   justify-content: space-between;
   min-width: 300px;
 }

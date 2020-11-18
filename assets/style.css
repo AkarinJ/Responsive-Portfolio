@@ -1,3 +1,25 @@
+
+
+    header {
+        padding: 1rem 0;
+        justify-content: space-between;
+    }
+
+
+    .row {
+      display: flex;
+    }
+
+
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      max-width: 100;
+    }
+
+
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,7 +28,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1%;
   background-color: #13293d;
@@ -19,16 +41,18 @@ h1 {
 
 
 
-header nav  {
-  display: inline-block;
-  justify-content: space-between;
+#headernav  {
+  /* display: inline-block; */
+  justify-content: end;
   min-width: 300px;
 }
 
- /* nav a {
+ nav a {
   color: #b9C6ae;
   font-weight: bold;
   text-decoration: none;
 }
 
-
+#headerBackground {
+  background-image: url("../photos/universe.jpg");
+}

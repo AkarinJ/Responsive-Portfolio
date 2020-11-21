@@ -5,7 +5,7 @@ header {
 
 
 .row {
-      display: flex;
+      flex-direction: row;
     }
 
 
@@ -15,7 +15,9 @@ header {
       max-width: 100;
     }
 
-    
+.flex { display: flex;
+
+}    
 
 .borderRight {
   border-right: 1px solid black;
@@ -41,7 +43,9 @@ h1 {
   font-size: 200%;
   }
 
+h3 {
 
+}
 
 #headernav  {
   /* display: inline-block; */

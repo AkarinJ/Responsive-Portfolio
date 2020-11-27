@@ -9,6 +9,19 @@ header {
     }
 
 
+.column {
+        flex-direction: column;
+}    
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
 .container {
       width: 900px;
       margin: 0 auto;
@@ -16,6 +29,8 @@ header {
     }
 
 .flex { display: flex;
+
+
 
 }    
 

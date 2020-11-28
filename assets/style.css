@@ -38,6 +38,10 @@ header {
   border-right: 1px solid black;
 }    
     
+.borderLeft {
+  border-left: 1px solid black;
+}
+
 
 body {
   display: flex;
@@ -61,6 +65,20 @@ h1 {
 h3 {
 
 }
+
+.work { display: flex;
+
+}
+
+.work2  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .work3  {
+  display: flex;
+  flex-wrap: wrap;
+} */
 
 #headernav  {
   /* display: inline-block; */

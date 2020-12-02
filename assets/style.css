@@ -13,6 +13,10 @@ header {
         flex-direction: column;
 }    
 
+main  {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .flex-container {
   display: flex;
@@ -73,6 +77,7 @@ h3 {
 .work2  {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* .work3  {
@@ -96,4 +101,52 @@ h3 {
   background-image: url("./photos/universe.jpg");
   display: flex;
   flex-direction: row-reverse;
+  }
+
+  .sample-img {
+    background-color: #fff;
+    width: 25%;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid black;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    aside {
+      order: 2;
+    }
+    /* Change the header background */
+    header {
+      background: #772014;
+    }
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+      background-color: #bb8588;
+    }
+  }
+
+  aside#1 {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 20px;
+  }
+  
+  section {
+    flex: 3;
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  aside#2 {
+    flex: 1
+    background-color: #b9c6ae;
+    padding: 20px;
+
   }

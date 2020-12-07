@@ -1,152 +1,81 @@
-header {
-  padding: 1rem 0;
-  justify-content: space-between;
-   }
+*   {
 
-
-.row {
-      flex-direction: row;
-    }
-
-
-.column {
-        flex-direction: column;
-}    
-
-main  {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  box-sizing: border-box;
 }
 
 
 
-
-.container {
-      width: 900px;
-      margin: 0 auto;
-      max-width: 100;
-    }
-
-.flex { display: flex;
-
-
-
-}    
-
-.borderRight {
-  border-right: 1px solid black;
-}    
-    
-.borderLeft {
-  border-left: 1px solid black;
+html {
+height: 100%;
 }
-
 
 body {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.3;
-  }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1%;
-  background-color: #13293d;
-  color: #fff;
-  }
+min-height: 100%;
+line-height: 1;
+font-family: sans-serif;
+}
 
 h1 {
-  font-size: 200%;
-  }
+font-size: 200%;
+}
 
-h3 {
+header {
+padding: 1rem 0;
+justify-content: space-between;
+background-color: pink;
+color: blueviolet;   
+min-width: 50%;
+}
+
+.row {
+display: flex;
+}
+
+.rowTitle > h2 {
+font-size: 30px;
+width: 200px;
+flex-shrink: 0;
 
 }
 
-.work { display: flex;
-
+.container {
+width: 900px;
+margin: 0 auto;
+max-width: 100%;
 }
 
-.work2  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
-/* .work3  {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
-#headernav  {
-  /* display: inline-block; */
-  justify-content: end;
-  min-width: 300px;
-  }
-
- nav a {
-  color: #b9C6ae;
-  font-weight: bold;
-  text-decoration: none;
-  }
 
 #headerBackground {
   background-image: url("./photos/universe.jpg");
   display: flex;
   flex-direction: row-reverse;
+  padding: 1%;
   }
 
-  .sample-img {
-    background-color: #fff;
-    width: 25%;
-    padding: 20px;
-    height: 200px;
-    border: 1px solid black;
-  }
+.borderRight {
+      border-right: 1px solid black;
+    }          
 
-  @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
-    main,
-    nav {
-      flex-direction: column;
-    }
-    /* Make the sidebar stack below the body */
-    aside {
-      order: 2;
-    }
-    /* Change the header background */
-    header {
-      background: #772014;
-    }
-    /* Change the navbar and footer background */
-    nav,
-    footer {
-      background-color: #bb8588;
-    }
-  }
 
-  aside#1 {
-    flex: 1;
-    background-color: #b9c6ae;
-    padding: 20px;
-  }
-  
-  section {
-    flex: 3;
-    background-color: #fff;
-    padding: 20px;
-  }
 
-  aside#2 {
-    flex: 1
-    background-color: #b9c6ae;
-    padding: 20px;
+#surfReport {
+display: flex 100%;
+height: 100px;
+justify-content: flex-start;
+}
+#areaA {
+background-color: lime;
+}
 
-  }
+#areaB {
+background-color: yellow;
+}
+
+#bigBox {
+background-color: aqua;
+
+ }

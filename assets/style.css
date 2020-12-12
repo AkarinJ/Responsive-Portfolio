@@ -22,6 +22,10 @@ h1 {
 font-size: 200%;
 }
 
+h4 {
+  font-size: 50%;
+}
+
 header {
 padding: 1rem 0;
 justify-content: space-between;
@@ -34,27 +38,57 @@ min-width: 50%;
 display: flex;
 }
 
-.rowTitle > h2 {
+.rowTitle  {
 font-size: 30px;
-width: 200px;
+
 flex-shrink: 0;
-
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: stretch;
+justify-content: space-between;
 }
 
-.container {
-width: 900px;
-margin: 0 auto;
-max-width: 100%;
+.rowTitle > h2 {
+flex: 0 0 20%;
+text-align: right;
+border-right: 4px solid;
 }
+
+.rowTitle > div {
+flex: 0 0 77%;
+}
+
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.flex-item {
+border: 5px solid yellow;
+min-height: 200px;
+max-height: 200px;
+display: flex;
+align-items: flex-end;
+flex-basis: 49%; 
+}
+
+.flex-item:first-child {
+min-height: 600px;
+flex-basis: 100%;
+} 
 
 
 
 #headerBackground {
   background-image: url("./photos/universe.jpg");
+  color: white;
   display: flex;
   flex-direction: row-reverse;
   padding: 1%;
   }
+
 
 .borderRight {
       border-right: 1px solid black;
@@ -63,10 +97,10 @@ max-width: 100%;
 
 
 #surfReport {
-display: flex 100%;
-height: 100px;
-justify-content: flex-start;
+  height: 200px;
+  align-items: baseline;
 }
+
 #areaA {
 background-color: lime;
 }
@@ -77,5 +111,9 @@ background-color: yellow;
 
 #bigBox {
 background-color: aqua;
+display: flex;
+width: 100%;
+height: 300px;
+flex-shrink: 0;
 
  }

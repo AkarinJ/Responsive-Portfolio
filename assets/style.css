@@ -20,6 +20,11 @@ font-family: sans-serif;
 
 h1 {
 font-size: 200%;
+background-color: steelblue;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 h4 {
@@ -29,7 +34,7 @@ h4 {
 header {
 padding: 1rem 0;
 justify-content: space-between;
-background-color: pink;
+background-color: grey;
 color: blueviolet;   
 min-width: 50%;
 }
@@ -53,6 +58,7 @@ justify-content: space-between;
 flex: 0 0 20%;
 text-align: right;
 border-right: 4px solid;
+padding-right: 15px;
 }
 
 .rowTitle > div {
@@ -60,13 +66,15 @@ flex: 0 0 77%;
 }
 
 .flex-container {
+justify-content: space-between;
 display: flex;
 flex-wrap: wrap;
-justify-content: center;
+
 }
 
 .flex-item {
-border: 5px solid yellow;
+margin-bottom: 15px;  
+border: 5px solid teal;
 min-height: 200px;
 max-height: 200px;
 display: flex;
@@ -86,7 +94,9 @@ flex-basis: 100%;
   color: white;
   display: flex;
   flex-direction: row-reverse;
-  padding: 1%;
+  padding: 50px;
+  height: 150px;
+  font-size: 150%;
   }
 
 
@@ -94,11 +104,33 @@ flex-basis: 100%;
       border-right: 1px solid black;
     }          
 
-
+#prevails {
+  background-color: steelblue;
+}
 
 #surfReport {
   height: 200px;
   align-items: baseline;
+}
+
+#work {
+  background-image: url("./photos/island.jpeg");
+}
+
+#led {
+  background-image: url("./photos/trees.jpeg");
+}
+
+#cal {
+  background-image: url("./photos/bug.jpeg");
+}
+
+#puz {
+  background-image: url("./photos/canyon.jpeg");
+}
+
+#run {
+  background-image: url("./photos/plant.jpeg");
 }
 
 #areaA {
@@ -115,5 +147,29 @@ display: flex;
 width: 100%;
 height: 300px;
 flex-shrink: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .row, .rowTitle {
+    flex-direction: column;
+  }
+
+  .rowTitle > h2 {
+  border-right: none;
+  padding-right: 0;
+  text-align: left;
+  margin-bottom: 1em;
+  }
+
+ main {
+  padding: 20px;
 
  }
+
+ 
+ 
+ 
+ 
+
+
+}
